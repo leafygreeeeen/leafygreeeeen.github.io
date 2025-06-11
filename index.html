@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>leafygreen's portfolio?</title>
         <style>
-            /* Dropdown Button */
-            .dropbtn {
-            background-color: #04AA6D;
-            color: white;
-            padding: 16px;
-            font-size: 16px;
+            .inline-block{
+            display: inline-block;}
+
+            .button-group{
+            color: black;
             border: none;}
 
+            .button-group a{
+            display: inline-block;
+            color: black;
+            padding: 4px 4px;
+            text-decoration: none;}
+             
+            /* Dropdown Button */
+            .dropdown-button {
+            border: 5px;
+            background-color: white;                                                                                                       ;
+            color: black;
+            padding: 4px 16px;
+            font-size: 16px;}
+
             /* The container <div> - needed to position the dropdown content */
-            .dropdown {
+            .dropdown-group {
             position: relative;
             display: inline-block;}
 
@@ -19,26 +33,24 @@
             .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #f1f1f1;
             min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;}
 
             /* Links inside the dropdown */
             .dropdown-content a {
             color: black;
-            padding: 12px 16px;
+            padding: 4px 16px;
             text-decoration: none;
             display: block;}
 
-            /* Change color of dropdown links on hover */
-            .dropdown-content a:hover {background-color: #ddd;}
+            /* Change color of buttons in group on hover */
+            .button-group a:hover {background-color: grey;}
 
             /* Show the dropdown menu on hover */
-            .dropdown:hover .dropdown-content {display: block;}
+            .dropdown-group:hover .dropdown-content {display: block;}
 
-            /* Change the background color of the dropdown button when the dropdown content is shown */
-            .dropdown:hover .dropbtn {background-color: #3e8e41;}
+            /* Change the background color of the dropdown button on hover*/
+            .dropdown-group:hover .dropdown-button{background-color: grey;}
         </style>
         <base href="/"/>
     </head>
@@ -46,18 +58,15 @@
 
     <body>
         <div id="header-placeholder"></div>
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="/art/index.html">Art</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
-        <h1>Hello World</h1>
-        <p>Hi! I'm Kegan. Decided i wanted a portfolio website. so here we are.</p>
-        <p>The site is obviously still under construction, so check back in a while :)</p>
 
+        <div>
+            <h1>Hello World</h1>
+            <p>Hi! I'm Kegan. Decided i wanted a portfolio website. so here we are.<br>
+            Everything here is more or less self taught, so it's a little rough<br>
+            Hopefully by the time you see this it's a lot more complete and polished</p>
+
+        </div>
+        
 
         <script src="/shared/headerLoader.js"></script>
 
