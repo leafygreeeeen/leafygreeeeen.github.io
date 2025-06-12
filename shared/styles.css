@@ -1,0 +1,57 @@
+.inline-block{
+display: inline-block;}
+
+.align-right{
+float: right;}
+
+.clearfix::after {
+content: "";
+clear: both;
+display: table;}
+
+
+.button-group{
+color: black;
+border: none;}
+
+.button-group a{
+display: inline-block;
+color: black;
+padding: 4px 4px;
+text-decoration: none;}
+    
+/* Dropdown Button */
+.dropdown-button {
+border: 5px;
+background-color: white;                                                                                                       ;
+color: black;
+padding: 4px 16px;
+font-size: 16px;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-group {
+position: relative;
+display: inline-block;}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+min-width: 160px;
+z-index: 1;}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 4px 16px;
+text-decoration: none;
+display: block;}
+
+/* Change color of buttons in group on hover */
+.button-group a:hover {background-color: grey;}
+
+/* Show the dropdown menu on hover */
+.dropdown-group:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button on hover*/
+.dropdown-group:hover .dropdown-button{background-color: grey;}
