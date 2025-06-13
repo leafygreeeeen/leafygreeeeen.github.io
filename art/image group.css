@@ -1,0 +1,19 @@
+.image-group{
+display: inline-block;
+position: relative;
+background-color: aqua;}
+
+.image-holder{
+display: block;
+height: 300px;
+width: 300px;}
+
+.image-holder p{
+background-color: beige;
+display: none;
+position: absolute;
+bottom: 0;
+width: 100%;
+z-index: 1;}
+
+.image-group:hover .image-holder p{display: block; float: bottom;}

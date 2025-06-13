@@ -54,4 +54,4 @@ display: block;}
 .dropdown-group:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button on hover*/
-.dropdown-group:hover .dropdown-button{background-color: grey;}
+.dropdown-group:hover .dropdown-button {background-color: grey;}
