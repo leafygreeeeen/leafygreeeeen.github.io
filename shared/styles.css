@@ -4,6 +4,10 @@ display: inline-block;}
 .align-right{
 float: right;}
 
+.align-center{
+margin: auto;
+}
+
 .clearfix::after {
 content: "";
 clear: both;
