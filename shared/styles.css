@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .inline-block{
     display: inline-block;
 }
@@ -31,7 +36,6 @@
 /* Dropdown Button */
 .dropdown-button {
     border: 5px;
-    background-color: white;
     color: black;
     padding: 4px 16px;
     font-size: 16px;
@@ -63,7 +67,7 @@
 
 /* Change color of buttons in group on hover */
 .button-group a:hover {
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 /* Show the dropdown menu on hover */
@@ -73,5 +77,5 @@
 
 /* Change the background color of the dropdown button on hover*/
 .dropdown-group:hover .dropdown-button {
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.5);
 }
