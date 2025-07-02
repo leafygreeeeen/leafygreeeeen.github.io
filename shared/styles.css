@@ -12,8 +12,22 @@ p{
     word-wrap: pretty;
 }
 
+
+
 .mainbody{
     margin: 2%;
+}
+.centerVert{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pSizedPhoto{
+    height: 2em;
+    width: auto;
+    display: inline-block;
+    margin: 0;
 }
 .inline-block{
     display: inline-block;
