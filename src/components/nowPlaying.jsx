@@ -1,43 +1,41 @@
-import { useEffect, useState } from "react";
-import getNowPlayingItem from "../../api/retrieveNowPlaying";
-export const SpotifyNowPlaying = (props) => {
+import { useEffect, useState } from 'react';
+
+export default function SpotifyNowPlaying() {
     const [loading, setLoading] = useState(true);
-    const [result, setResult] = useState({});
+    const [result, setResult] = useState(null);
+
     useEffect(() => {
-        Promise.all([
-            getNowPlayingItem(
-                props.client_id,
-                props.client_secret,
-                props.refresh_token
-            ),
-        ]).then((results) => {
-            setResult(results[0]);
-            setLoading(false);
-        });
-    });
+        fetch('/api/retrieveNowPlaying')
+            .then((res) => res.json())
+            .then((data) => {
+                setResult(data);
+                setLoading(false);
+            })
+            .catch((error) => {
+                console.error("Failed to fetch now playing:", error);
+                setLoading(false);
+            });
+    }, []);
+
+    if (loading) {
+        return <p>Loading...</p>;
+    }
+
+    if (!result || !result.isPlaying) {
+        return (
+            <div>
+                <p>Currently Offline</p>
+            </div>
+        );
+    }
+
     return (
         <div>
-            {loading && <p>Loading...</p>}
-            {!loading && !isPlaying (
-                <div>
-                    <SpotifyLogo />
-                    <span>Currently offline"</span>
-                </div>
-            )}
-            {!loading && isPlaying(
-                <div>
-                    <div>
-                        <SpotifyLogo />
-                        <span>Now playing</span>
-                    </div>
-                    <div>
-                        <img src={result.albumImageUrl} alt={`${result.title} album art`}/>
-                        <PlayingAnimation />
-                        <a href={result.songUrl} target="_blank">{result.title}</a>
-                        <p>{result.artist}</p>
-                    </div>
-                </div>
-            )}
+            <h2>Now Playing</h2>
+            <img src={result.albumImageUrl} alt={`${result.title} album art`} />
+            <p>{result.title}</p>
+            <p>{result.artist}</p>
+            <a href={result.songUrl} target="_blank">Open in Spotify</a>
         </div>
-    )
-};
+    );
+}

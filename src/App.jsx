@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
-import {SpotifyNowPlaying} from './components/nowPlaying';
+import SpotifyNowPlaying from './components/nowPlaying';
 
 export default function App() {
     return (
