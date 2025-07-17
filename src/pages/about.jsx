@@ -1,14 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <base href="/"/>
-        <link rel="stylesheet" href="/shared/styles.css">
-        <link rel="stylesheet" href="/art/image group.css">
-    </head>
-
-
-    <body>
-        <div id="header-placeholder"></div>
+export default function about(){
+    return(
         <div class="mainbody">
             <div style="width: 50%; float: left; padding-right: 5%;">
                 <h2>About me!</h2>
@@ -18,11 +9,9 @@
                 <p>Never really made a proper art portfolio so here we are. I also really wanted to make a website, so this portfolio website is where I'm learning how to make websites. Like my work? Check out my contact page for a commission. Currently serving National Service so updates may be sparse.</p>
             </div>
             <div>
-                <img style="float: left;" src="shared/me 1.jpg">
+                <img style="float: left;" src="public/shared/me 1.jpg" />
             </div>
         </div>
         
-        <script src="/shared/headerLoader.js"></script>
-    </body>
-
-</html>
+    )
+}
