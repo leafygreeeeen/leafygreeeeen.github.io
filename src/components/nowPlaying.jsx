@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import 's/components/css/SpotifyNowPlaying.css'
+import 's/components/css/spotifyNowPlaying.css'
 
 export default function SpotifyNowPlaying() {
     const [loading, setLoading] = useState(true);
