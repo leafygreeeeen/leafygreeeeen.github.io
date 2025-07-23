@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'steelfish';
+    src: url('/fonts/Steelfish Rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'steelfish bold';
+    src: url('/fonts/Steelfish Bd.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'steelfish outline';
+    src: url('/fonts/Steelfish Outline.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

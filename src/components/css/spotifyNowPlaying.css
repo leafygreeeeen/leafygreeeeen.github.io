@@ -1,0 +1,34 @@
+.overall{
+    border-radius: 1em;
+    background-color: #535353;
+    width: 30em;
+    overflow: auto;
+}
+
+.spacer{
+    padding: 1em;
+    overflow: auto;
+}
+
+.album-cover{
+    float: right;
+    aspect-ratio: 1;
+    width: 6em;
+}
+
+.title{
+    margin:0;
+    font-family: 'steelfish';
+    font-size: 2.5em;
+}
+
+.artist{
+    margin: 0;
+    font-family: 'steelfish';
+    font-size: 1.5em;
+}
+
+.link{
+    font-family: 'steelfish';
+    font-size: .5em;
+}

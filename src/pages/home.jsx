@@ -1,3 +1,5 @@
+import SpotifyNowPlaying from 's/components/nowPlaying';
+
 export default function home(){
     return(
         <div>
@@ -6,6 +8,10 @@ export default function home(){
             Everything here is more or less self taught, so it's a little rough
             Hopefully by the time you see this it's a lot more complete and polished</p>
 
+            
+            <div style={{ padding: '2rem' }}>
+                <SpotifyNowPlaying />
+            </div>
         </div>
     )
 }
